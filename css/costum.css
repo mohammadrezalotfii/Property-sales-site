@@ -1,0 +1,180 @@
+div.pre-header {
+  background: url(../media/Header-image/wave.png) center center/cover;
+  z-index: 0;
+  opacity: 0.2;
+}
+
+div.texture {
+  background: url(../media/Header-image/texture.svg) top right/cover;
+  z-index: 0;
+  opacity: 0.5;
+}
+
+img.Himg {
+  transform: rotatey(180deg);
+}
+
+div.comment {
+  overflow: hidden;
+}
+
+div.comment::after {
+  content: "";
+  overflow: visible;
+  width: 200px;
+  height: 200px;
+  background: url(../media/Coments/hover\ star.svg) center center/contain
+    no-repeat;
+  position: absolute;
+  left: -24px;
+  top: -24px;
+  z-index: -1;
+  rotate: 25deg;
+  opacity: 0.3;
+}
+
+div.comment:hover::after {
+  animation: star 5s linear infinite;
+}
+
+@keyframes star {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.swiper-slide,
+.swiper-wrapper,
+.swiper,
+.mySwiper {
+  align-items: stretch !important;
+}
+
+.swiper-slide{
+  height: 100% !important;
+}
+
+.swiper-wrapper{
+  align-items: stretch !important;
+  height: 100% !important;
+  position: relative !important;
+}
+
+.prefooter{
+  background: url(../media/footer/texture2.svg) center bottom/cover no-repeat;
+}
+
+@keyframes faidInRight{
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(100%, 0, 0);
+    transform: translate3d(100%, 0, 0);
+  }
+  
+  to {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes faidInLeft{
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(-100%, 0, 0);
+    transform: translate3d(-100%, 0, 0);
+  }
+  
+  to {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes zoomIn {
+  from {
+    opacity: 0;
+    -webkit-transform: scale3d(0.3, 0.3, 0.3);
+    transform: scale3d(0.3, 0.3, 0.3);
+  }
+
+  50% {
+    opacity: 1;
+  }
+}
+
+.h1Head{
+  animation: faidInRight 800ms ease;
+}
+
+.p1Head{
+  animation: faidInRight 1200ms ease;
+}
+
+.btnHead{
+  animation: faidInRight 1400ms ease;
+
+}
+
+.btnHead2{
+  animation: faidInRight 1600ms ease;
+
+}
+
+.shomar1{
+  animation: faidInRight 1200ms ease;
+}
+.shomar2{
+  animation: faidInRight 1400ms ease;
+}
+.shomar3{
+  animation: faidInRight 1600ms ease;
+}
+
+.h2Sec2{
+  animation: faidInRight 800ms ease;
+}
+
+.img1Sec2{
+  animation: faidInRight 600ms ease;
+}
+
+.p1Sec2{
+  animation: faidInRight 1200ms ease;
+}
+
+.btn1Sec2{
+  animation: zoomIn 1200ms ease;
+}
+
+.headCard1{
+  animation: faidInRight 1200ms ease;
+}
+
+.headCard1D1{
+  animation: faidInRight 1200ms ease;
+}
+
+.headCard1D2{
+  animation: faidInRight 1400ms ease;
+}
+
+.headCard2{
+  animation: faidInRight 1200ms ease;
+}
+
+.headCard2D1{
+  animation: faidInRight 1600ms ease;
+}
+
+.headCard2D2{
+  animation: faidInRight 1800ms ease;
+}
+
+.slider1{
+  animation: faidInRight 1800ms ease;
+}

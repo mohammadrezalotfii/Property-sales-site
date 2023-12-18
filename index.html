@@ -1,0 +1,914 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl" id="html">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title></title>
+    <link rel="stylesheet" href="./css/costum.css" />
+    <link rel="stylesheet" href="./css/main.css" />
+    <link rel="stylesheet" href="./animate.css/animate.min.css" />
+    <link rel="stylesheet" href="./swiper/swiper-bundle.min.css" />
+    <style>
+      .swiper {
+        width: 100%;
+      }
+    </style>
+  </head>
+  <body class="font-body bg-Gray-8 select-none">
+    <div
+      id="ad"
+      class="bg-Gray-10 h-12 flex justify-center items-center relative"
+    >
+      <p class="z-10 capitalize text-White-100 text-lg inline-block">
+        ✨خانه رویایی خودرا با ما بسازید
+      </p>
+      <span
+        id="closeTab"
+        class="z-10 w-8 h-8 bg-Gray-20 flex justify-center items-center absolute right-4 rounded-full cursor-pointer"
+      >
+        <img src="./media/Header-image/close.svg" alt="" />
+      </span>
+      <div class="pre-header absolute w-full h-full top-0 left-0"></div>
+    </div>
+
+    <!-- start Header -->
+    <header class="bg-Gray-10 sticky top-0 z-50">
+      <nav
+        class="mx-auto flex max-w-[1536px] items-center justify-between p-6 lg:px-8"
+        aria-label="Global"
+      >
+        <div class="flex lg:flex-1">
+          <a href="#" class="-m-1.5 p-1.5">
+            <img
+              loading="lazy"
+              class="h-8 w-auto"
+              src="./media/Header-image/Logo.png"
+              alt=""
+            />
+          </a>
+        </div>
+        <div class="flex lg:hidden">
+          <button
+            id="open"
+            type="button"
+            class="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700"
+          >
+            <span class="sr-only">Open main menu</span>
+            <svg
+              class="h-6 w-6"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="#ffffff"
+              aria-hidden="true"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+              />
+            </svg>
+          </button>
+        </div>
+        <div class="hidden lg:flex lg:gap-x-2">
+          <a href="#" class="nav-btn-active">خانه</a>
+          <a href="#" class="nav-btn">درباره‌ما</a>
+          <a href="#" class="nav-btn">ویژگی‌ها</a>
+          <a href="#" class="nav-btn">خدمات</a>
+        </div>
+        <div class="hidden lg:flex lg:flex-1 lg:justify-end">
+          <a href="#" class="nav-btn-active">تماس با ما</a>
+        </div>
+      </nav>
+
+      <!-- Mobile menu -->
+      <div class="lg:hidden" role="dialog" aria-modal="true">
+        <div id="menuMo" class="hidden fixed inset-0 z-50">
+          <div
+            class="fixed inset-y-0 left-0 z-50 w-full overflow-y-auto bg-Gray-10 px-6 py-6 sm:max-w-sm"
+          >
+            <div class="flex items-center justify-between">
+              <a href="#" class="-m-1.5 p-1.5">
+                <img
+                  src="./media/Header-image/Logo.png"
+                  loading="lazy"
+                  alt=""
+                />
+              </a>
+              <button
+                id="close"
+                type="button"
+                class="-m-2.5 rounded-md p-2.5 text-White-100"
+              >
+                <span class="sr-only">Close menu</span>
+                <svg
+                  class="h-6 w-6"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  aria-hidden="true"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M6 18L18 6M6 6l12 12"
+                  />
+                </svg>
+              </button>
+            </div>
+            <div class="mt-6 flow-root">
+              <div class="-m-6 divide-y divide-White-100">
+                <div class="space-y-2 py-6">
+                  <div class="px-3 mx-3">
+                    <a href="#" class="nav-btn-mobile-active">خانه</a>
+                    <a href="#" class="nav-btn-mobile">درباره‌ما</a>
+                    <a href="#" class="nav-btn-mobile">ویژگی‌ها</a>
+                    <a href="#" class="nav-btn-mobile">سرویس</a>
+                  </div>
+                  <hr class="text-Gray-15 mx-6" />
+                  <div class="mx-6">
+                    <a href="#" class="nav-btn-mobile">تماس با ما</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- end Header -->
+
+    <!-- start Head -->
+    <section id="head" class="w-full md:bg-Gray-10 relative px-4 md:px-0">
+      <div
+        class="flex flex-col-reverse md:items-stretch md:flex-row w-full md:mx-auto max-w-[1920px] items-center"
+      >
+        <div
+          class="mb-2 bg-Gray-8 md:w-1/2 md:px-12 py-6 flex flex-col justify-center gap-y-12 xl:gap-y-16"
+        >
+          <div class="flex w-full flex-col gap-2">
+            <h1 class="h1Head text-4xl text-White-100">
+              خانه رویایی خود را با ما بسازید
+            </h1>
+            <p class="p1Head md:text-lg text-Gray-60">
+              سفر شما برای یافتن ملک جدید از همینجا شروع می‌شود. فهرست‌های ما را
+              مطالعه کنید تا خانه‌ی رویایی خود بیابید و در‌ آن زندگی کنید.
+            </p>
+          </div>
+          <div class="flex gap-4 flex-wrap md:flex-nowrap">
+            <a href="#" class="btnHead btn-outline w-full md:w-fit"
+              >بیشتر بخوانید</a
+            >
+            <a href="#" class="btnHead2 btn-fill w-full md:w-fit"
+              >مشاهده خانه‌های پیشنهادی</a
+            >
+          </div>
+          <div class="flex flex-wrap md:flex-nowrap gap-4">
+            <div
+              class="shomar1 flex-grow bg-Gray-10 border border-Gray-15 flex flex-col justify-center items-center py-4 px-6 rounded-xl"
+            >
+              <h2 class="text-White-100 text-4xl text-left" id="customers">
+                ۲۰۰+
+              </h2>
+              <p class="text-Gray-60 text-right">رضایت مشتری</p>
+            </div>
+            <div
+              class="shomar2 flex-grow bg-Gray-10 border border-Gray-15 flex justify-center items-center flex-col py-4 px-6 rounded-xl"
+            >
+              <h2 class="text-White-100 text-4xl" id="clients">۱۰۰۰۰+</h2>
+              <p class="text-Gray-60">تنوع خانه و ملک</p>
+            </div>
+            <div
+              class="shomar3 flex-grow bg-Gray-10 border border-Gray-15 flex flex-col justify-center items-center py-4 px-6 rounded-xl"
+            >
+              <h2 class="text-White-100 text-4xl text-left" id="experience">
+                ۱۶+
+              </h2>
+              <p class="text-Gray-60 text-right">سال سابقه در املاک</p>
+            </div>
+          </div>
+        </div>
+        <div
+          class="animate__animated animate__zoomIn md:w-1/2 inline-block h-fit relative overflow-hidden md:m-0 my-4 border border-Gray-15 md:border-none rounded-2xl md:rounded-none bg-Gray-10"
+        >
+          <div class="texture absolute w-full h-full top-0 right-0"></div>
+          <img src="./media/Header-image/Image.png" class="z-10 Himg" alt="" />
+        </div>
+      </div>
+      <div
+        class="bg-Gray-10 flex flex-col-reverse md:items-stretch md:flex-row w-full md:mx-auto max-w-[1920px] items-center py-1 px-1 md:px-0 rounded-2xl md:rounded-none"
+      >
+        <div
+          class="bg-Gray-8 w-full h-full flex justify-between gap-4 p-2 md:p-4 border border-Gray-15 rounded-[14px] md:rounded-none flex-wrap md:flex-nowrap"
+        >
+          <div id="headCard1"  class="hidden justify-between items-stretch w-full gap-4">
+            <div class="headCard1D1 flex flex-col w-full justify-center items-center relative flex-grow py-5 px-3 md:py-8 md:px-5 xl:py-10 xl:px-6 gap-2 border border-Gray-15 bg-Gray-10 rounded-xl">
+              <a href="#" class="absolute right-3 top-3">
+                <img
+                  src="./media/Header-image/flash.svg"
+                  loading="lazy"
+                  alt=""
+                />
+              </a>
+              <div
+                class="icon w-12 h-12 md:h-16 md:w-16 xl:w-20 xl:h-20 flex justify-center items-center"
+              >
+                <img
+                  src="./media/Header-image/home.svg"
+                  loading="lazy"
+                  alt=""
+                />
+              </div>
+              <h3 class="text-White-100 text-center">
+                خانه رویایی خود را پیدا کنید
+              </h3>
+            </div>
+            <div class="headCard1D2 head-card">
+              <a href="#" class="absolute right-3 top-3">
+                <img
+                  src="./media/Header-image/flash.svg"
+                  loading="lazy"
+                  alt=""
+                />
+              </a>
+              <div
+                class="icon w-12 h-12 md:h-16 md:w-16 xl:w-20 xl:h-20 flex justify-center items-center"
+              >
+                <img
+                  src="./media/Header-image/bank-card.svg"
+                  loading="lazy"
+                  alt=""
+                />
+              </div>
+              <h3 class="text-White-100 text-center">ویژگی‌ها را مشخص کنید</h3>
+            </div>
+          </div>
+          <div id="headCard2" class="hidden justify-between items-stretch w-full gap-4">
+            <div class="headCard2D1 head-card">
+              <a href="#" class="absolute right-3 top-3">
+                <img
+                  src="./media/Header-image/flash.svg"
+                  loading="lazy"
+                  alt=""
+                />
+              </a>
+              <div
+                class="icon w-12 h-12 md:h-16 md:w-16 xl:w-20 xl:h-20 flex justify-center items-center"
+              >
+                <img src="./media/Header-image/sun.svg" loading="lazy" alt="" />
+              </div>
+              <h3 class="text-White-100 text-center">
+                هوشمندانه سرمایه‌گذاری کنید
+              </h3>
+            </div>
+            <div class="headCard2D2 head-card">
+              <a href="#" class="absolute right-3 top-3">
+                <img
+                  src="./media/Header-image/flash.svg"
+                  loading="lazy"
+                  alt=""
+                />
+              </a>
+              <div
+                class="icon w-12 h-12 md:h-16 md:w-16 xl:w-20 xl:h-20 flex justify-center items-center"
+              >
+                <img
+                  src="./media/Header-image/apartemant.svg"
+                  loading="lazy"
+                  alt=""
+                />
+              </div>
+              <h3 class="text-White-100 text-center">
+                املاک خودرا به راحتی مدیریت کنید
+              </h3>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- end Head -->
+
+    <!-- start section2 -->
+    <section id="section2" class="w-ful mt-20 px-4 md:px-0">
+      <div class="mx-auto max-w-[1536px] px-4 md:px-11 flex flex-col gap-6">
+        <div class="flex flex-col gap-2">
+          <div class="flex flex-col gap-2 w-full md:w-3/4">
+            <span id="img1Sec2" class="hidden">
+              <img src="./media/section2/starts.svg" alt="" />
+            </span>
+            <h2 id="h2Sec2" class="hidden text-4xl text-White-100">برترین ویژگی‌ها</h2>
+          </div>
+          <div
+            class="w-auto flex flex-col md:flex-row gap-6 justify-between items-center"
+          >
+            <p id="p1Sec2" class="hidden text-lg text-Gray-60 md:w-3/4">
+              پیشنهادات ویژه ما را بررسی کنید. هر کارت نگاه کاملی به خانه‌های
+              استثنائی دارد و سرمایه‌گذاری موجود در شرکت‌ما را نشان می‌دهد. برای
+              اطلاعات بیشتر روی "مشاهده جزئیات" کلیک کنید.
+            </p>
+            <a href="#" id="btn1Sec2" class="btn-outline hidden md:hidden">مشاهده جزئیات</a>
+          </div>
+        </div>
+        <!-- start proCard -->
+        <div id="slider1" class="swiper mySwiper hide">
+          <div class="flex justify-start swiper-wrapper">
+            <!-- start procard 1 -->
+            <div class="swiper-slide">
+              <div
+                class="w-full p-6 md:p-8 xl:p-10 border border-Gray-15 rounded-2xl flex flex-col gap-4"
+              >
+                <img src="./media/Apartemant/1.png" alt="" />
+                <div class="flex flex-col gap-2">
+                  <h3 class="text-White-100 text-2xl">برج بزرگ شهری</h3>
+                  <p class="text-base text-Gray-60">
+                    در هر طبقه این برج ۳ اتاق خواب و ۲ حمام وجود دارد که مجزا از
+                    هم هستند...
+                    <a href="#" class="text-White-100 text-base underline"
+                      >بیشتر بخوانید</a
+                    >
+                  </p>
+                </div>
+                <div class="flex flex-wrap gap-3">
+                  <a href="#" class="chips"
+                    >۳ اتاق خواب<span
+                      ><img src="./media/Apartemant/bedroom.png" alt="" /></span
+                  ></a>
+                  <a href="#" class="chips"
+                    >۲ سرویس‌بهداشتی<span
+                      ><img
+                        src="./media/Apartemant/bathroom.png"
+                        alt="" /></span
+                  ></a>
+                  <a href="#" class="chips"
+                    >آپارتمان<span
+                      ><img
+                        src="./media/Apartemant/building.png"
+                        alt="" /></span
+                  ></a>
+                </div>
+                <div class="flex flex-col md:flex-row md:justify-between gap-4">
+                  <p class="text-White-100 text-2xl">
+                    ۵,۰۰۰,۰۰۰,۰۰۰ <span>تومان</span>
+                  </p>
+                  <a href="#" class=" btn-fill w-full md:w-fit">جزئیات بیشتر</a>
+                </div>
+              </div>
+            </div>
+            <!-- end procard 1 -->
+
+            <!-- start procard 2 -->
+            <div class="swiper-slide">
+              <div
+                class="w-full p-6 md:p-8 xl:p-10 border border-Gray-15 rounded-2xl flex flex-col gap-4"
+              >
+                <img src="./media/Apartemant/2.png" alt="" />
+                <div class="flex flex-col gap-2">
+                  <h3 class="text-White-100 text-2xl">بهشت ساحلی</h3>
+                  <p class="text-base text-Gray-60">
+                    در این بهشت بهترین ویو ممکنه را دارید که یکسو آن به سمت دریا
+                    و سوی دیگر...<a href="#" class="text-White-100 text-base underline"
+                      >بیشتر بخوانید</a
+                    >
+                  </p>
+                </div>
+                <div class="flex flex-wrap gap-3">
+                  <a href="#" class="chips"
+                    >۲ اتاق خواب<span
+                      ><img src="./media/Apartemant/bedroom.png" alt="" /></span
+                  ></a>
+                  <a href="#" class="chips"
+                    >۱ سرویس‌بهداشتی<span
+                      ><img
+                        src="./media/Apartemant/bathroom.png"
+                        alt="" /></span
+                  ></a>
+                  <a href="#" class="chips"
+                    >ویلا ساحلی<span
+                      ><img
+                        src="./media/Apartemant/building.png"
+                        alt="" /></span
+                  ></a>
+                </div>
+                <div class="flex flex-col md:flex-row md:justify-between gap-4">
+                  <p class="text-White-100 text-2xl">
+                    ۵,۰۰۰,۰۰۰,۰۰۰ <span>تومان</span>
+                  </p>
+                  <a href="#" class="btn-fill w-full md:w-fit">جزئیات بیشتر</a>
+                </div>
+              </div>
+            </div>
+            <!-- end procard 2 -->
+
+            <!-- start procard 3 -->
+            <div class="swiper-slide">
+              <div
+                class="w-full p-6 md:p-8 xl:p-10 border border-Gray-15 rounded-2xl flex flex-col gap-4"
+              >
+                <img src="./media/Apartemant/3.png" alt="" />
+                <div class="flex flex-col gap-2">
+                  <h3 class="text-White-100 text-2xl">ویلای نقلی</h3>
+                  <p class="text-base text-Gray-60">در این ویلای نقلی دلبرانه می‌توانید لذت دنیا را ببرید و با دوستان خود...<a href="#" class="text-White-100 text-base underline"
+                      >بیشتر بخوانید</a
+                    >
+                  </p>
+                </div>
+                <div class="flex flex-wrap gap-3">
+                  <a href="#" class="chips"
+                    >۴ اتاق خواب<span
+                      ><img src="./media/Apartemant/bedroom.png" alt="" /></span
+                  ></a>
+                  <a href="#" class="chips"
+                    >۳ سرویس‌بهداشتی<span
+                      ><img
+                        src="./media/Apartemant/bathroom.png"
+                        alt="" /></span
+                  ></a>
+                  <a href="#" class="chips"
+                    >ویلا جنگلی<span
+                      ><img
+                        src="./media/Apartemant/building.png"
+                        alt="" /></span
+                  ></a>
+                </div>
+                <div class="flex flex-col md:flex-row md:justify-between gap-4">
+                  <p class="text-White-100 text-2xl">
+                    ۵,۰۰۰,۰۰۰,۰۰۰ <span>تومان</span>
+                  </p>
+                  <a href="#" class="btn-fill w-full md:w-fit">جزئیات بیشتر</a>
+                </div>
+              </div>
+            </div>
+            <!-- end procard 3 -->
+
+            <!-- start procard 4 -->
+            <div class="swiper-slide">
+              <div
+                class="w-full p-6 md:p-8 xl:p-10 border border-Gray-15 rounded-2xl flex flex-col gap-4"
+              >
+                <img src="./media/Apartemant/1.png" alt="" />
+                <div class="flex flex-col gap-2">
+                  <h3 class="text-White-100 text-2xl">برج بزرگ شهری</h3>
+                  <p class="text-base text-Gray-60">
+                    در هر طبقه این برج ۳ اتاق خواب و ۲ حمام وجود دارد که مجزا از
+                    هم هستند...
+                    <a href="#" class="text-White-100 text-base underline"
+                      >بیشتر بخوانید</a
+                    >
+                  </p>
+                </div>
+                <div class="flex flex-wrap gap-3">
+                  <a href="#" class="chips"
+                    >۳ اتاق خواب<span
+                      ><img src="./media/Apartemant/bedroom.png" alt="" /></span
+                  ></a>
+                  <a href="#" class="chips"
+                    >۲ سرویس‌بهداشتی<span
+                      ><img
+                        src="./media/Apartemant/bathroom.png"
+                        alt="" /></span
+                  ></a>
+                  <a href="#" class="chips"
+                    >آپارتمان<span
+                      ><img
+                        src="./media/Apartemant/building.png"
+                        alt="" /></span
+                  ></a>
+                </div>
+                <div class="flex flex-col md:flex-row md:justify-between gap-4">
+                  <p class="text-White-100 text-2xl">
+                    ۵,۰۰۰,۰۰۰,۰۰۰ <span>تومان</span>
+                  </p>
+                  <a href="#" class="btn-fill w-full md:w-fit">جزئیات بیشتر</a>
+                </div>
+              </div>
+            </div>
+            <!-- end procard 4 -->
+          </div>
+        </div>
+        <!-- end proCard -->
+        <div class="flex justify-between">
+          <a href="#" class=" btn-outline w-full md:hidden">مشاهده جزئیات</a>
+        </div>
+      </div>
+    </section>
+    <!-- end section2 -->
+
+    <!-- start section3 -->
+    <section id="section3" class="w-ful mt-20 px-4 md:px-0">
+      <div class="mx-auto max-w-[1536px] px-4 md:px-11 flex flex-col gap-6">
+        <div class="flex flex-col gap-2">
+          <div class="flex flex-col gap-2 w-full md:w-3/4">
+            <span id="img1Sec3" class="hidden">
+              <img src="./media/section2/starts.svg" alt="" />
+            </span>
+            <h2 id="h2Sec3" class="hidden text-4xl text-White-100">نظرات مشتریان</h2>
+          </div>
+          <div
+            class="w-auto flex flex-col md:flex-row gap-6 justify-between items-center"
+          >
+            <p id="p1Sec3" class="hidden text-lg text-Gray-60 md:w-3/4">
+              داستان موفقیت و توصیه‌های دوستانه‌ی مشتریان گرامی را بخوایند. به
+              نتیجه‌ای برسید که چرا مشتریان شرکت ما را انتخاب کردند.
+            </p>
+            <a id="btn1Sec3" href="#" class="btn-outline hidden md:hidden">مشاهده جزئیات</a>
+          </div>
+        </div>
+        <!-- start proCard -->
+        <div id="slider2" class="hide swiper mySwiper flex overflow-visible">
+          <div class="swiper-wrapper flex items-stretch overflow-visible">
+            <!-- start comment 1=========================================== -->
+            <div class="swiper-slide comment relative">
+              <div
+                class="w-full p-6 md:p-8 xl:p-10 border border-Gray-15 rounded-2xl flex justify-between flex-col gap-6"
+              >
+                <div class="flex flex-col justify-between h-full gap-4">
+                  <div class="flex gap-2">
+                    <div class="star">
+                      <img src="./media/Coments/strar.svg" alt="" />
+                    </div>
+                    <div class="star">
+                      <img src="./media/Coments/strar.svg" alt="" />
+                    </div>
+                    <div class="star">
+                      <img src="./media/Coments/strar.svg" alt="" />
+                    </div>
+                    <div class="star">
+                      <img src="./media/Coments/strar.svg" alt="" />
+                    </div>
+                    <div class="star">
+                      <img src="./media/Coments/strar.svg" alt="" />
+                    </div>
+                  </div>
+                  <div class="flex flex-col gap-2">
+                    <h4 class="text-White-100 text-2xl">خدمات فوق‌العاده</h4>
+                    <p class="text-base text-White-100">
+                      ما تجربه فوق‌العاده‌ای با این شرکت تجربه کریدم. فداکاری و
+                      حرفه‌ای بودن تیم آنها، پیدا کردن خانه‌رواییمان را برایمان
+                      آسان کرد. حتما توصیه می‌شود.
+                    </p>
+                  </div>
+                  <div class="flex gap-4">
+                    <div class="h-16 w-16 rounded-full">
+                      <img src="./media/Coments/wade-warren.png" alt="" />
+                    </div>
+                    <div class="flex flex-col justify-between">
+                      <h5 class="text-White-100 text-xl">وید وارن</h5>
+                      <p class="text-Gray-60">آمریکا, کالیفرنیا</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- start comment 2=========================================== -->
+            <div
+              class="swiper-slide comment relative w-full p-6 md:p-8 xl:p-10 border border-Gray-15 rounded-2xl flex justify-between flex-col gap-6"
+            >
+              <div class="flex flex-col justify-between h-full gap-4">
+                <div class="flex gap-2">
+                  <div class="star">
+                    <img src="./media/Coments/strar.svg" alt="" />
+                  </div>
+                  <div class="star">
+                    <img src="./media/Coments/strar.svg" alt="" />
+                  </div>
+                  <div class="star">
+                    <img src="./media/Coments/strar.svg" alt="" />
+                  </div>
+                  <div class="star">
+                    <img src="./media/Coments/strar.svg" alt="" />
+                  </div>
+                  <div class="star">
+                    <img src="./media/Coments/strar.svg" alt="" />
+                  </div>
+                </div>
+                <div class="flex flex-col gap-2">
+                  <h4 class="text-White-100 text-2xl">کارآمد و قابل اعتماد</h4>
+                  <p class="text-base text-White-100">
+                    این شرکت خدمات درجه یک را به ما ارائه کرد. آنها به ما کمک
+                    کردند تا ملک خپد را سریع و با قیمت عالی بفروشیم. ما
+                    نمی‌توانستیم از نتایج راضی نباشیم.
+                  </p>
+                </div>
+                <div class="flex gap-4">
+                  <div class="h-16 w-16 rounded-full">
+                    <img src="./media/Coments/emelie.png" alt="" />
+                  </div>
+                  <div class="flex flex-col justify-between">
+                    <h5 class="text-White-100 text-xl">امیلیا تامسون</h5>
+                    <p class="text-Gray-60">کانادا, تورنتو</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- start comment 3=========================================== -->
+            <div
+              class="swiper-slide comment relative w-full p-6 md:p-8 xl:p-10 border border-Gray-15 rounded-2xl flex flex-col justify-between gap-6"
+            >
+              <div class="flex flex-col justify-between h-full gap-4">
+                <div class="flex gap-2">
+                  <div class="star">
+                    <img src="./media/Coments/strar.svg" alt="" />
+                  </div>
+                  <div class="star">
+                    <img src="./media/Coments/strar.svg" alt="" />
+                  </div>
+                  <div class="star">
+                    <img src="./media/Coments/strar.svg" alt="" />
+                  </div>
+                  <div class="star">
+                    <img src="./media/Coments/strar.svg" alt="" />
+                  </div>
+                  <div class="star">
+                    <img src="./media/Coments/strar.svg" alt="" />
+                  </div>
+                </div>
+                <div class="flex flex-col gap-2">
+                  <h4 class="text-White-100 text-2xl">مشاوران مورد اعتماد</h4>
+                  <p class="text-base text-White-100">
+                    تیم این شرکت، ما را در کل فرایند خرید راهنمایی کرد. دانش و
+                    تعهد آنها به نیازهای ما چشمگیر بود. از حمایت شما متشکریم!
+                  </p>
+                </div>
+                <div class="flex gap-4">
+                  <div class="h-16 w-16 rounded-full">
+                    <img src="./media/Coments/john.png" alt="" />
+                  </div>
+                  <div class="flex flex-col justify-between">
+                    <h5 class="text-White-100 text-xl">جان مارس</h5>
+                    <p class="text-Gray-60">آمریکا, نیویورک‌سیتی</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- start comment 4=========================================== -->
+            <div
+              class="swiper-slide comment relative w-full p-6 md:p-8 xl:p-10 border border-Gray-15 rounded-2xl flex flex-col justify-between gap-6"
+            >
+              <div class="flex flex-col justify-between h-full gap-4">
+                <div class="flex gap-2">
+                  <div class="star">
+                    <img src="./media/Coments/strar.svg" alt="" />
+                  </div>
+                  <div class="star">
+                    <img src="./media/Coments/strar.svg" alt="" />
+                  </div>
+                  <div class="star">
+                    <img src="./media/Coments/strar.svg" alt="" />
+                  </div>
+                  <div class="star">
+                    <img src="./media/Coments/strar.svg" alt="" />
+                  </div>
+                  <div class="star">
+                    <img src="./media/Coments/strar.svg" alt="" />
+                  </div>
+                </div>
+                <div class="flex flex-col gap-2">
+                  <h4 class="text-White-100 text-2xl">صحولت در کار</h4>
+                  <p class="text-base text-White-100">
+                    مدت‌ها بود که نمی‌توانستم خانه‌ام را بفروشم و بسیار از
+                    کار‌هایم عقب افتاده بودم و فروش خانه برایم سخت بود ولی این
+                    شکرت کمک کرد. خیلی ازشون ممنونم!
+                  </p>
+                </div>
+                <div class="flex gap-4">
+                  <div class="h-16 w-16 rounded-full">
+                    <img src="./media/Coments/john.png" alt="" />
+                  </div>
+                  <div class="flex flex-col justify-between">
+                    <h5 class="text-White-100 text-xl">آرتور مرگان</h5>
+                    <p class="text-Gray-60">آمریکا, لس‌آنجلس</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- end proCard -->
+        <div class="flex justify-between">
+          <div class="flex justify-between gap-3"></div>
+          <a href="#" class="btn-outline w-full md:hidden">مشاهده جزئیات</a>
+        </div>
+      </div>
+    </section>
+    <!-- end section3 -->
+
+    <!-- start section4 -->
+    <section id="section4" class="w-full mt-20 px-4 md:px-0">
+      <div class="mx-auto max-w-[1536px] px-4 md:px-11 flex flex-col gap-6">
+        <div class="flex flex-col gap-2">
+          <div class="flex flex-col gap-2 w-full md:w-3/4">
+            <span id="img1Sec4" class="hidden">
+              <img src="./media/section2/starts.svg" alt="" />
+            </span>
+            <h2 id="h2Sec4" class="hidden text-4xl text-White-100">پرسش و پاسخ</h2>
+          </div>
+          <div
+            class="w-auto flex flex-col md:flex-row gap-6 justify-between items-center"
+          >
+            <p id="p1Sec4" class="hidden text-lg text-Gray-60 md:w-3/4">
+              پاسخ به سوالات رایج در مورد خدمات شرکت ما، لیست املاک و فرآیند
+              املاک و مستغلات را بیابید. ما اینجا هستیم تا به وضوح راه حل را به
+              شما ارائه دهیم و در هر مرحله به شما کمک کنیم.
+            </p>
+            <a href="#" itemref="btn1Sec4" class="btn-outline hidden md:hidden">مشاهده جزئیات</a>
+          </div>
+        </div>
+        <!-- start proCard -->
+        <div id="slider3" class="hide swiper mySwiper">
+          <div class="swiper-wrapper flex">
+            <!-- start F&Q 1=========================================== -->
+            <div class="relative swiper-slide rounded-2xl">
+              <div
+                class="w-full p-6 md:p-8 xl:p-10 border border-Gray-15 rounded-2xl flex justify-between flex-col gap-6"
+              >
+                <div class="flex flex-col gap-4">
+                  <h4 class="text-White-100 text-2xl">
+                    چکونه در این شرکت به دنبال املاک خاص بگردم؟
+                  </h4>
+                  <p class="text-base text-White-100">
+                    بیاموزید که چگونه از ابزارهای جستجوی کابرپسند ما استفاده
+                    کنید.
+                  </p>
+                </div>
+                <a href="#" class="btn-outline w-full md:w-fit"
+                  >بیشتر بخوانید</a
+                >
+              </div>
+            </div>
+
+            <!-- start F&Q 2=========================================== -->
+            <div class="relative swiper-slide rounded-2xl">
+              <div
+                class="w-full p-6 md:p-8 xl:p-10 border border-Gray-15 rounded-2xl flex justify-between flex-col gap-6"
+              >
+                <div class="flex flex-col gap-4">
+                  <h4 class="text-White-100 text-2xl">
+                    برای فروش ملک خود از طریق این شرکت به چه مدارکی نیاز دارم؟
+                  </h4>
+                  <p class="text-base text-White-100">
+                    از مدارک مورد نیاز برای ثبت املاک خود در شرکت ما مطلع شوید.
+                  </p>
+                </div>
+
+                <a href="#" class="btn-outline w-full md:w-fit"
+                  >بیشتر بخوانید</a
+                >
+              </div>
+            </div>
+
+            <!-- start F&Q 3=========================================== -->
+            <div class="relative swiper-slide rounded-2xl">
+              <div
+                class="w-full p-6 md:p-8 xl:p-10 border border-Gray-15 rounded-2xl flex flex-col justify-between gap-6"
+              >
+                <div class="flex flex-col gap-4">
+                  <h4 class="text-White-100 text-2xl">
+                    چگونه می‌توانم با مشاوران شما تماس بگیرم؟
+                  </h4>
+                  <p class="text-base text-White-100">
+                    راه های مختلفی را که می‌توانید با مشاوران مجرب ما در تماس
+                    باشید پیدا پیدا کنید.
+                  </p>
+                </div>
+                <a href="#" class="btn-outline w-full md:w-fit"
+                  >بیشتر بخوانید</a
+                >
+              </div>
+            </div>
+
+            <!-- start F&Q 4=========================================== -->
+            <div class="relative swiper-slide rounded-2xl">
+              <div
+                class="w-full p-6 md:p-8 xl:p-10 border border-Gray-15 rounded-2xl flex flex-col justify-between gap-6"
+              >
+                <div class="flex flex-col gap-4">
+                  <h4 class="text-White-100 text-2xl">
+                    چگونه می‌توانم با مشاوران شما تماس بگیرم؟
+                  </h4>
+                  <p class="text-base text-White-100">
+                    راه های مختلفی را که می‌توانید با مشاوران مجرب ما در تماس
+                    باشید پیدا پیدا کنید.
+                  </p>
+                </div>
+                <a href="#" class="btn-outline w-full md:w-fit"
+                  >بیشتر بخوانید</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- end proCard -->
+        <div class="flex justify-between">
+          <a href="#" class="btn-outline w-full md:hidden">مشاهده جزئیات</a>
+        </div>
+      </div>
+    </section>
+    <!-- end section4 -->
+
+    <!-- start section5 -->
+    <section
+      id="section5"
+      class="w-full mt-12 prefooter border-t border-t-Gray-15 border-b border-b-Gray-15 relative px-4 md:px-0"
+    >
+      <div
+        class="flex-col md:flex-row p-4 md:px-12 md:py-6 flex w-full md:mx-auto max-w-[1536px] items-center gap-11"
+      >
+        <div class="flex flex-col justify-between gap-4 w-full md:w-3/4">
+          <h3 id="h3Sec5" class="hidden text-2xl text-White-100">
+            اولین سفر کاری خود را در این شرکت شروع کنید
+          </h3>
+          <p id="p1Sec5" class="hidden text-lg text-Gray-60">
+            ملک رویایی شما تنها با یا کلیک فاصله دارد. چه به سرمایه‌گذاری
+            استراتژیک، یا مشاوره تخصصی املاک و مستغلات باشد، ما اینجاییم تا در
+            هر مرحله به شما کمک کنیم. اولین قدم را به سمت اهداف املاکی خود
+            بردارید و ملک‌های موجود ما را مشاهده کنید یا برای کمک شخصی با تیم
+            حرفه‌ای ما تماس بگیرید.
+          </p>
+        </div>
+        <div class="w-full md:w-1/4">
+          <a href="#" id="btn1Sec5" class="hidden btn-fill w-full md:w-fit float-left"
+            >جستجو املاک</a
+          >
+        </div>
+      </div>
+    </section>
+    <!-- end section5 -->
+
+    <!-- start footer -->
+    <footer id="footer" class="w-full relative md:px-0">
+      <div
+        class="flex-col md:flex-row px-8 py-8 md:px-12 md:py-6 flex w-full md:mx-auto max-w-[1536px] justify-between flex-wrap md:flex-nowrap items-start gap-11"
+      >
+        <div class="flex flex-col gap-6">
+          <a href="#">
+            <img src="./media/Header-image/Logo.png" alt="" />
+          </a>
+          <div
+            class="flex items-center justify-between border border-Gray-15 rounded-2xl overflow-hidden px-4"
+          >
+            <input
+              class="bg-Gray-8 text-White-100 h-full w-60 py-2 text-lg focus:outline-none focus:border-none"
+              type="text"
+              placeholder="ایمیل خودرا وارد کنید"
+            />
+            <a href="#">
+              <img src="./media/footer/send.svg" alt="" />
+            </a>
+          </div>
+        </div>
+        <div class="flex gap-6 flex-wrap md:flex-nowrap">
+          <div class="flex flex-col gap-3 flex-grow">
+            <h5 class="text-xl text-Gray-60">خانه</h5>
+            <a href="#" class="text-White-100 text-base">ابتدا صفحه</a>
+            <a href="#" class="text-White-100 text-base">امکانات</a>
+            <a href="#" class="text-White-100 text-base">ویژگی‌ها</a>
+            <a href="#" class="text-White-100 text-base">گواهینامه‌ها</a>
+            <a href="#" class="text-White-100 text-base">پرسش و پاسخ</a>
+          </div>
+          <div class="flex flex-col gap-3 flex-grow">
+            <h5 class="text-xl text-Gray-60">درباره‌ما</h5>
+            <a href="#" class="text-White-100 text-base">داستان‌ما</a>
+            <a href="#" class="text-White-100 text-base">کار ما</a>
+            <a href="#" class="text-White-100 text-base">چگونه کار می‌کند</a>
+            <a href="#" class="text-White-100 text-base">تیم ما</a>
+            <a href="#" class="text-White-100 text-base">دیگر سایت‌ها</a>
+          </div>
+          <div class="flex flex-col gap-3 flex-grow">
+            <h5 class="text-xl text-Gray-60">ویژگی‌ها</h5>
+            <a href="#" class="text-White-100 text-base">پروفایل‌کاری ما</a>
+            <a href="#" class="text-White-100 text-base">دسته‌بندی</a>
+          </div>
+          <div class="flex flex-col gap-3 flex-grow">
+            <h5 class="text-xl text-Gray-60">خدمات</h5>
+            <a href="#" class="text-White-100 text-base">ارزش گذاری</a>
+            <a href="#" class="text-White-100 text-base">استراتژی بازاریابی</a>
+            <a href="#" class="text-White-100 text-base">جادوگری در مذاکره</a>
+            <a href="#" class="text-White-100 text-base">نزدیکی به موفقیت</a>
+            <a href="#" class="text-White-100 text-base"
+              >خیالی راحت از مدریت املاک</a
+            >
+          </div>
+          <div class="flex flex-col gap-3 flex-grow">
+            <h5 class="text-xl text-Gray-60">تماس با ما</h5>
+            <a href="#" class="text-White-100 text-base">فرم تماس</a>
+            <a href="#" class="text-White-100 text-base">دیگر شعبات</a>
+          </div>
+        </div>
+      </div>
+      <div class="w-full px-4 md:px-0 bg-Gray-10 py-4">
+        <div class="mx-auto max-w-[1536px] flex justify-center items-center">
+          <p class="text-Gray-60 text-center">طراحی و کدنویسی توسط محمدرضا لطفی</p>
+        </div>
+      </div>
+    </footer>
+    <!-- end footer -->
+
+    <script src="./swiper/swiper-bundle.min.js"></script>
+    <script src="./jquery/dist/jquery.min.js"></script>
+    <script src="./js/script.js"></script>
+  </body>
+</html>

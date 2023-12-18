@@ -1,0 +1,27 @@
+{
+  "name": "tailwind",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "tailwind": "npx tailwindcss -i ./src/tailwind.css -o ./css/main.css --watch"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@emotion/styled": "^11.11.0",
+    "@mui/icons-material": "^5.15.0",
+    "@mui/material": "^5.15.0",
+    "animate.css": "^4.1.1",
+    "glider-js": "^1.7.8",
+    "jquery": "^3.7.1",
+    "json-server": "^0.17.4",
+    "live-server": "^1.2.2",
+    "swiper": "^11.0.5",
+    "vanilla-tilt": "^1.8.1"
+  },
+  "devDependencies": {
+    "tailwindcss": "^3.3.5"
+  }
+}

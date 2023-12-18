@@ -1,0 +1,59 @@
+@font-face {
+  font-family: Kalameh;
+  src: url(../font/Kalameh-Regular.woff);
+}
+
+@font-face {
+  font-family: KalamehB;
+  src: url(../font/Kalameh-Bold.woff);
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .nav-btn-active {
+    @apply py-3 px-6 bg-Gray-8 text-White-100 border border-Gray-15 rounded-xl;
+  }
+
+  .nav-btn{
+    @apply py-3 px-6 text-White-100;
+  }
+
+  .nav-btn-mobile{
+    @apply -mx-3 my-2 block rounded-lg px-3 py-2 text-base leading-7 text-White-100 hover:bg-Gray-8 border border-Gray-10 hover:border hover:border-Gray-15;
+  }
+
+  .nav-btn-mobile-active{
+    @apply -mx-3 my-2 block rounded-lg px-3 py-2 text-base leading-7 text-White-100 bg-Gray-8 border border-Gray-15;
+  }
+
+  .btn-outline{
+    @apply py-3 px-6 text-sm flex flex-nowrap justify-center items-center bg-Gray-8 text-White-100 border border-Gray-15 rounded-xl hover:bg-Gray-15/20;
+  }
+
+  .btn-fill{
+    @apply py-3 px-6 text-sm bg-Pruple-60 text-White-100 border border-Pruple-60 rounded-xl hover:bg-Pruple-65 flex justify-center items-center;
+  }
+
+  .head-card{
+    @apply flex flex-col w-full justify-center items-center relative flex-grow py-5 px-3 md:py-8 md:px-5 xl:py-10 xl:px-6 gap-2 border border-Gray-15 bg-Gray-10 rounded-xl;
+  }
+
+  .chips{
+    @apply w-fit flex flex-row-reverse gap-2 text-White-100 text-sm py-2 px-3 bg-Gray-10 rounded-full border border-Gray-15;
+  }
+
+  .slider-btn{
+    @apply bg-Gray-10 rounded-full border p-2 border-Gray-15;
+  }
+
+  .star{
+    @apply p-2 bg-Gray-10 rounded-full border border-Gray-15;
+  }
+
+  .hide{
+    display: none !important;
+  }
+}
